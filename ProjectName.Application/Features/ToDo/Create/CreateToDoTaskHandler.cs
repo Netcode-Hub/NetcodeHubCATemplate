@@ -10,7 +10,6 @@ namespace ProjectName.Application.Features.ToDo.Create
         public async Task<ServiceResponse<Guid>> Handle(CreateToDoTaskCommand request, CancellationToken cancellationToken)
         {
             // Validation will be handled by the Behavior
-            // Exception will be handled by the Behavior
             // Logging will be handled by the Behavior
 
             var mapDto = mapper.Map<ToDoTask>(request.CreateToDo);

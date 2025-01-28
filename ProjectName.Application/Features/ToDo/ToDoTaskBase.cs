@@ -1,6 +1,5 @@
 ﻿namespace ProjectName.Application.Features.ToDo
 {
-    // use abstract so this base record can't be instantiated
     public abstract record ToDoTaskBase
     {
         public string Title { get; init; }
