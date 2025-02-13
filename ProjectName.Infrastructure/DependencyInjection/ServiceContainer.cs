@@ -7,6 +7,7 @@ namespace ProjectName.Infrastructure.DependencyInjection
 {
     public static class ServiceContainer
     {
+        // register services
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration config) =>
             services.AddDatabase(config).AddHealthChecks(config);
         private static IServiceCollection AddDatabase(this IServiceCollection services, IConfiguration configuration)
