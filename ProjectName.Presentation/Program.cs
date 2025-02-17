@@ -26,3 +26,8 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
+
+namespace ProjectName.Presentation
+{
+    public partial class Program;
+}
